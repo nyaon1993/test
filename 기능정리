@@ -1,0 +1,20 @@
+user
+
+<회원테이블>
+uid    primary_key auto increment seq
+name  notnull varchar(20)
+user_id notnull varchar(50) unique
+password notnull varchar(30)
+gender nullable varchar(3)
+created_time   default sysdate() date
+modified_time  default sysdate() date
+
+
+<쪽지테이블>
+id primary_key auto increment seq
+sender_id notnull varchar(50) 
+receiver_id notnull varchar(50) 
+receive_time default sysdate() date 
+message notnull varchar(1000)
+
+
